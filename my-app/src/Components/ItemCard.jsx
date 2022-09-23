@@ -27,7 +27,7 @@ const ItemCard = (elem) => {
           
 
         </Box>
-        <Button mt='4' onClick={()=> handleModal("https://images.unsplash.com/photo-1661956600684-97d3a4320e45?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=500&q=60" )} >Trial</Button>
+        <Button mt='4' onClick={handleModal} >Trial</Button>
 
         {modal && 
         <Modal isOpen={true} onClose={()=>onClose(setModal(!modal))}>
@@ -48,6 +48,7 @@ const ItemCard = (elem) => {
           </ModalFooter>
         </ModalContent>
       </Modal>
+      
         }
       
     </Box>
